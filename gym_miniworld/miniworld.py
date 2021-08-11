@@ -919,6 +919,7 @@ class MiniWorldEnv(gym.Env):
         Place the agent in the environment at a random position
         and orientation
         """
+        self.step_count = 0
 
         return self.place_entity(
             self.agent,
